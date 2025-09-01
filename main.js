@@ -1,4 +1,21 @@
-const OPENWEATHER_API_KEY = config.OPENWEATHER_API_KEY;
+// Debug logging
+console.log('WeatherMan app starting...');
+console.log('Config loaded:', typeof config);
+console.log('API Key available:', !!config?.OPENWEATHER_API_KEY);
+
+// Show debug info on page
+const debugDiv = document.getElementById('debug');
+if (debugDiv) {
+    debugDiv.style.display = 'block';
+    debugDiv.innerHTML = `
+        Config: ${typeof config}<br>
+        API Key: ${!!config?.OPENWEATHER_API_KEY}<br>
+        Scripts: ${document.scripts.length}
+    `;
+}
+
+// Fallback API key if config doesn't load
+const OPENWEATHER_API_KEY = config?.OPENWEATHER_API_KEY || "52831a1b3e86f7713d41cb7a092a8116";
 const state = {
     cities: [],
     selectedCity: null
