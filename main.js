@@ -1,4 +1,4 @@
-const OPENWEATHER_API_KEY = "52831a1b3e86f7713d41cb7a092a8116";
+const OPENWEATHER_API_KEY = config.OPENWEATHER_API_KEY;
 const state = {
     cities: [],
     selectedCity: null
