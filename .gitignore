@@ -6,6 +6,9 @@ config.js
 .env.local
 .env.*.local
 
+# Vercel
+.vercel
+
 # IDE files
 .vscode/
 .idea/
