@@ -3,11 +3,6 @@ console.log('WeatherMan app starting...');
 console.log('Config loaded:', typeof config);
 console.log('API Key available:', !!config?.OPENWEATHER_API_KEY);
 
-// Fail fast if config.js or API key is missing (helps on Vercel)
-if (!window.config || !config.OPENWEATHER_API_KEY) {
-    alert('Missing config.js or OPENWEATHER_API_KEY. Ensure /config.js is deployed and loaded before main.js.');
-}
-
 // Fallback API key if config doesn't load (optional: keep empty to enforce deploy correctness)
 const OPENWEATHER_API_KEY = config?.OPENWEATHER_API_KEY;
 const state = {
