@@ -112,7 +112,7 @@ body {
 }
 
 .search button {
-    background: linear-gradient(135deg, #ff8a00 0%, #ffae3d 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #c2c2c2 100%);
     border: none;
     color: #000;
     padding: 10px 16px;
@@ -130,7 +130,7 @@ body {
 }
 
 #location-btn {
-    background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #d1d1d1 100%);
     box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
 }
 
